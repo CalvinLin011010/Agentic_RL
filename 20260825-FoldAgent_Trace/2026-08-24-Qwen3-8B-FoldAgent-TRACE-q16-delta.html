@@ -37,7 +37,7 @@ body{margin:0;background:#f7f8fa;color:#202124;font:14px/1.55 Arial,"Noto Sans C
 <h2>约束核验结论</h2>
 <p>k=2 的正确标题只是检索 observation 中的词面命中；k=3、k=4 没有新增决定性证据，仍围绕 theatre/film 泛查询。fold 后摘要保留了部分 <code>dead</code>，但没有可靠保留“2008 年 + Alice 角色 + production manager/producer + house manager”的联合关系。最终 branch 选择 <code>The Wailing</code>，并且解释中承认它是 2016 年电影，直接违反题目年份约束。</p>
 <p class="muted">定义：<code>active_coverage</code> 是当前可见 decoded 上下文覆盖 gold 内容词的比例；<code>V</code> 与 <code>delta</code> 只是在 coverage proxy 上重现 Eq.(7) 的代数，不是 TRACE frozen-reference likelihood 或训练 reward。</p>
-<p class="src">完整 v2 诊断（含 29 个 case 的逐 action、observation、category、coverage、V、delta 和其他 SVG）位于：<a href="../../../../AgenticRL-Lab-long/logs/browsecomp_qwen3_8b_trace_importfix_20260818_0205/train/external_eval/trajectory_report_step100_diagnostics_zh_v2/diagnostics.html">trajectory_report_step100_diagnostics_zh_v2/diagnostics.html</a></p>
+<p class="src">完整 v2 诊断（含 29 个 case 的逐 action、observation、category、coverage、V、delta 和其他 SVG）位于：<a href="trajectory_report_step100_diagnostics_zh_v2/diagnostics.html">trajectory_report_step100_diagnostics_zh_v2/diagnostics.html</a></p>
 </main>
 </body>
 </html>

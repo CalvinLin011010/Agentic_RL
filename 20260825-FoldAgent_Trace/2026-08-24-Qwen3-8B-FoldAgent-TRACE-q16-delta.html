@@ -11,6 +11,7 @@ body{margin:0;background:#f7f8fa;color:#202124;font:14px/1.55 Arial,"Noto Sans C
 <body>
 <header><h1>q16：未训练模型答对，step-100 训练模型答错</h1><div>gold = Dead on Site；base rollout 249 = strict 正确；step-100 = The Wailing，strict 错误。</div></header>
 <main>
+<nav class="nav"><a href="index.html">报告首页</a><button type="button" onclick="history.back()">返回上一页</button><button type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})">回到顶端</button></nav>
 <div class="callout"><b>核心故障：</b>step-100 的 search observation 在 k=2 已出现正确标题 <code>Dead on Site</code>，累计词面 coverage 达 1.00；但后续没有核验 2008 年约束，auxiliary branch 最终选择 2016 年的 <code>The Wailing</code>。k=5 的被动 main fold 使可见 coverage 降至 0.50。</div>
 <h2>逐 action 事件</h2>
 <section class="panel"><table><thead><tr><th>k</th><th>category</th><th>action</th><th>关键 observation</th><th>local gold / hit</th><th>累计 coverage</th><th>V</th><th>delta</th><th>flags</th></tr></thead><tbody>
